@@ -18,6 +18,7 @@ void    fill(char *bits, int bits_i, int val)
         j++;
     }
 }
+
 char *ascii_to_bit(char *str)
 {
     int i; //index of the str
@@ -32,11 +33,12 @@ char *ascii_to_bit(char *str)
     bits_i = (i + 1) * 8;
     len = ft_strlen(str);
     bits = calloc(len * 8, sizeof(char));
+
     while (i < len)
     {
         bits_i = (i + 1) * 8;
         bits_i--;
-        val = (int)str[i]; //get ascii of the char
+        val = (int)str[i]; 
         fill(bits, bits_i , val);
         i++;
     }

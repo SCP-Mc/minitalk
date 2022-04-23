@@ -10,7 +10,7 @@ static int length(unsigned int n, int len)
     return (len);
 }
 
-static void *actual_itoa(char *res, unsigned int nb, int len)
+void *actual_itoa(char *res, unsigned int nb, int len)
 {
     while (nb > 0)
     {
